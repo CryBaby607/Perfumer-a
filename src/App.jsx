@@ -1,19 +1,24 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
 import HomePage from './pages/HomePage';
 import MenCatalogPage from './pages/MenCatalogPage';
 import WomenCatalogPage from './pages/WomenCatalogPage';
 import OffersPage from './pages/OffersPage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/men" element={<MenCatalogPage />} />
-        <Route path="/women" element={<WomenCatalogPage />} />
-        <Route path="/offers" element={<OffersPage />} />
-      </Routes>
+      <CartProvider>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/men" element={<MenCatalogPage />} />
+          <Route path="/women" element={<WomenCatalogPage />} />
+          <Route path="/offers" element={<OffersPage />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </CartProvider>
     </BrowserRouter>
   );
 }

@@ -15,66 +15,66 @@ const Footer = () => (
             <h2 className="text-white text-lg font-bold">Luxury Scents</h2>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed">
-            The premier destination for authentic luxury fragrances. We bring the world's most coveted scents to your doorstep.
+            El destino principal para fragancias de lujo auténticas. Traemos los aromas más codiciados del mundo directamente a tu puerta.
           </p>
         </div>
 
         {/* Links Section */}
         <div className="flex gap-12 flex-wrap">
           <div>
-            <h4 className="text-white font-bold mb-4">Shop</h4>
+            <h4 className="text-white font-bold mb-4">Tienda</h4>
             <ul className="flex flex-col gap-2 text-sm text-slate-400">
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Best Sellers
+                  Más Vendidos
                 </a>
               </li>
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Men's Cologne
+                  Perfumes de Caballero
                 </a>
               </li>
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Women's Perfume
+                  Perfumes de Dama
                 </a>
               </li>
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Niche Brands
+                  Marcas de Nicho
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-4">Support</h4>
+            <h4 className="text-white font-bold mb-4">Soporte</h4>
             <ul className="flex flex-col gap-2 text-sm text-slate-400">
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Contact Us
+                  Contáctanos
                 </a>
               </li>
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Shipping Policy
+                  Política de Envíos
                 </a>
               </li>
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  Returns
+                  Devoluciones
                 </a>
               </li>
               <li>
                 <a className="hover:text-green-400 transition-colors" href="#">
-                  FAQ
+                  Preguntas Frecuentes
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-4">Contact</h4>
+            <h4 className="text-white font-bold mb-4">Contacto</h4>
             <ul className="flex flex-col gap-2 text-sm text-slate-400">
               <li className="flex items-center gap-2">
                 <Icon name="mail" className="text-xs" /> 
@@ -92,7 +92,7 @@ const Footer = () => (
       {/* Bottom Bar */}
       <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-slate-400 text-xs">
-          © 2023 Luxury Scents. All rights reserved.
+          © 2023 Luxury Scents. Todos los derechos reservados.
         </p>
         <div className="flex gap-4">
           <a className="text-slate-400 hover:text-white" href="#">

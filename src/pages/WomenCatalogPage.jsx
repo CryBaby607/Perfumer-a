@@ -4,10 +4,12 @@ import Header from '../components/layout/Header';
 import FloatingWhatsApp from '../components/layout/FloatingWhatsApp';
 import Icon from '../components/ui/Icon';
 import { womenProducts, womenBrands, womenScentFamilies } from '../data/womenProducts';
+import { useCart } from '../context/CartContext';
 
 const WomenCatalogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [sortBy, setSortBy] = useState('featured');
+  const { addToCart } = useCart();
 
   const filteredProducts = selectedCategory === 'All'
     ? womenProducts
@@ -22,7 +24,8 @@ const WomenCatalogPage = () => {
   });
 
   const handleAddToQuote = (product) => {
-    alert(`${product.name} added to quote!`);
+    addToCart(product);
+    alert(`${product.name} added to cart!`);
   };
 
   const handleWhatsApp = (product) => {

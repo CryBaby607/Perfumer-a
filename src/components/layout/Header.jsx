@@ -2,11 +2,13 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../ui/Icon';
+import { useCart } from '../../context/CartContext';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const location = useLocation();
+  const { getCartCount } = useCart();
 
   const isActive = (path) => location.pathname === path;
 
@@ -87,11 +89,15 @@ const Header = () => {
           
           {/* Cart/Quote */}
           <Link
-            to="/quote"
+            to="/cart"
             className="relative flex items-center justify-center p-2 text-white hover:text-green-400 transition-colors"
           >
             <Icon name="shopping_cart" />
-            <span className="absolute top-0 right-0 size-2 bg-green-400 rounded-full"></span>
+            {getCartCount() > 0 && (
+              <span className="absolute -top-1 -right-1 size-5 bg-green-400 rounded-full flex items-center justify-center text-xs font-bold text-slate-900">
+                {getCartCount()}
+              </span>
+            )}
           </Link>
           
           {/* Mobile Menu Button */}

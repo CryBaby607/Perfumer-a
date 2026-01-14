@@ -12,7 +12,7 @@ const HeroSection = () => (
         <div className="flex-1 flex flex-col gap-6 text-center md:text-left z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-300/30 bg-slate-300/10 w-fit mx-auto md:mx-0">
             <span className="text-slate-300 text-xs font-bold tracking-wider uppercase">
-              Premium Collection
+              Colección Premium
             </span>
           </div>
           
@@ -24,17 +24,17 @@ const HeroSection = () => (
           </h1>
           
           <p className="text-slate-300 text-lg md:text-xl font-light max-w-lg mx-auto md:mx-0">
-            Elevate your presence with our curated collection of world-class scents. 
-            Authentic fragrances delivered directly to your door.
+            Eleva tu presencia con nuestra colección curada de aromas de clase mundial. 
+            Fragancias auténticas entregadas directamente en tu puerta.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
             <button className="flex items-center justify-center gap-2 h-12 px-8 rounded-lg bg-green-400 hover:bg-green-300 text-slate-900 text-base font-bold transition-all shadow-[0_0_20px_rgba(19,236,91,0.3)]">
               <Icon name="chat" />
-              <span>Order via WhatsApp</span>
+              <span>Ordenar por WhatsApp</span>
             </button>
             <button className="flex items-center justify-center gap-2 h-12 px-8 rounded-lg border border-slate-700 hover:bg-slate-800 text-white text-base font-medium transition-all">
-              <span>View Catalog</span>
+              <span>Ver Catálogo</span>
             </button>
           </div>
         </div>
@@ -53,7 +53,7 @@ const HeroSection = () => (
             <div className="absolute bottom-6 left-6 right-6 bg-slate-900/80 backdrop-blur-md border border-white/10 p-4 rounded-xl">
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-blue-500 text-xs font-bold uppercase">Featured</p>
+                  <p className="text-blue-500 text-xs font-bold uppercase">Destacado</p>
                   <p className="text-white font-bold">Tom Ford Oud Wood</p>
                 </div>
                 <span className="text-green-400 font-bold">$295</span>

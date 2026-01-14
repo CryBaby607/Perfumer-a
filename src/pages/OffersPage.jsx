@@ -4,9 +4,11 @@ import Header from '../components/layout/Header';
 import FloatingWhatsApp from '../components/layout/FloatingWhatsApp';
 import Icon from '../components/ui/Icon';
 import { offersProducts } from '../data/offersProducts';
+import { useCart } from '../context/CartContext';
 
 const OffersPage = () => {
   const [sortBy, setSortBy] = useState('discount');
+  const { addToCart } = useCart();
 
   const sortedProducts = [...offersProducts].sort((a, b) => {
     switch (sortBy) {
@@ -18,7 +20,8 @@ const OffersPage = () => {
   });
 
   const handleAddToQuote = (product) => {
-    alert(`${product.name} added to quote!`);
+    addToCart(product);
+    alert(`${product.name} added to cart!`);
   };
 
   return (

@@ -7,9 +7,9 @@ const HowToBuySection = () => (
     <div className="max-w-[1280px] mx-auto px-4 md:px-10">
       {/* Section Header */}
       <div className="text-center mb-16">
-        <h2 className="text-white text-3xl font-bold mb-4">How to Buy</h2>
+        <h2 className="text-white text-3xl font-bold mb-4">Cómo Comprar</h2>
         <p className="text-slate-400">
-          Simple, secure, and personalized via WhatsApp.
+          Simple, seguro y personalizado vía WhatsApp.
         </p>
       </div>
 

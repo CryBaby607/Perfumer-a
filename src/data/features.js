@@ -4,37 +4,37 @@ export const features = [
   { 
     icon: "verified_user", 
     title: "100% Original", 
-    description: "Authenticity guaranteed or money back." 
+    description: "Autenticidad garantizada o te devolvemos tu dinero." 
   },
   { 
     icon: "local_shipping", 
-    title: "Fast Shipping", 
-    description: "Delivery within 24-48 hours nationwide." 
+    title: "Envío Rápido", 
+    description: "Entrega en 24-48 horas a nivel nacional." 
   },
   { 
     icon: "lock", 
-    title: "Secure Payment", 
-    description: "Pay safely upon delivery or via transfer." 
+    title: "Pago Seguro", 
+    description: "Paga seguro contra entrega o vía transferencia." 
   }
 ];
 
 export const steps = [
   { 
     icon: "travel_explore", 
-    title: "1. Explore", 
-    description: "Browse our catalog and add your favorite scents to the quote list.", 
+    title: "1. Explora", 
+    description: "Navega nuestro catálogo y agrega tus aromas favoritos a la lista de cotización.", 
     highlight: false 
   },
   { 
     icon: "chat", 
-    title: "2. Quote", 
-    description: "Send your cart directly to our WhatsApp. An agent will confirm stock.", 
+    title: "2. Cotiza", 
+    description: "Envía tu carrito directamente a nuestro WhatsApp. Un agente confirmará existencias.", 
     highlight: true 
   },
   { 
     icon: "check_circle", 
-    title: "3. Confirm", 
-    description: "Pay securely and receive your original fragrance in 24-48 hours.", 
+    title: "3. Confirma", 
+    description: "Paga seguro y recibe tu fragancia original en 24-48 horas.", 
     highlight: false 
   }
 ];
