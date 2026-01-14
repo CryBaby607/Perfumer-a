@@ -1,7 +1,6 @@
 // src/pages/HomePage.jsx
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
-import FloatingWhatsApp from '../components/layout/FloatingWhatsApp';
 import HeroSection from '../components/home/HeroSection';
 import FeaturesSection from '../components/home/FeaturesSection';
 import ProductsSection from '../components/home/ProductsSection';
@@ -24,7 +23,6 @@ const HomePage = () => {
       </main>
       
       <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 };

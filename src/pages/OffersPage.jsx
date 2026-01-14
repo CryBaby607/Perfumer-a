@@ -1,7 +1,6 @@
 // src/pages/OffersPage.jsx
 import { useState } from 'react';
 import Header from '../components/layout/Header';
-import FloatingWhatsApp from '../components/layout/FloatingWhatsApp';
 import Icon from '../components/ui/Icon';
 import { offersProducts } from '../data/offersProducts';
 import { useCart } from '../context/CartContext';
@@ -140,7 +139,7 @@ const OffersPage = () => {
         </div>
       </main>
 
-      <FloatingWhatsApp />
+      {/* FloatingWhatsApp removed */}
     </div>
   );
 };

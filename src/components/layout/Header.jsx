@@ -36,7 +36,7 @@ const Header = () => {
                   : 'text-slate-300 hover:text-blue-500'
               }`}
             >
-              Home
+              Inicio
             </Link>
             <Link 
               to="/men"
@@ -46,7 +46,7 @@ const Header = () => {
                   : 'text-slate-300 hover:text-blue-500'
               }`}
             >
-              Men
+              Hombres
             </Link>
             <Link 
               to="/women"
@@ -56,7 +56,7 @@ const Header = () => {
                   : 'text-slate-300 hover:text-pink-400'
               }`}
             >
-              Women
+              Mujeres
             </Link>
             <Link 
               to="/offers"
@@ -66,7 +66,7 @@ const Header = () => {
                   : 'text-slate-300 hover:text-green-400'
               }`}
             >
-              Offers
+              Ofertas
             </Link>
           </nav>
         </div>
@@ -80,7 +80,7 @@ const Header = () => {
             </div>
             <input 
               className="block w-full rounded-lg border-none bg-slate-800 py-2 pl-10 pr-3 text-sm text-white placeholder-slate-400 focus:ring-1 focus:ring-green-400" 
-              placeholder="Search perfume..." 
+              placeholder="Buscar perfume..." 
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -123,7 +123,7 @@ const Header = () => {
                   : 'text-slate-300 hover:bg-slate-800'
               }`}
             >
-              Home
+              Inicio
             </Link>
             <Link 
               to="/men"
@@ -134,7 +134,7 @@ const Header = () => {
                   : 'text-slate-300 hover:bg-slate-800'
               }`}
             >
-              Men
+              Hombres
             </Link>
             <Link 
               to="/women"
@@ -145,7 +145,7 @@ const Header = () => {
                   : 'text-slate-300 hover:bg-slate-800'
               }`}
             >
-              Women
+              Mujeres
             </Link>
             <Link 
               to="/offers"
@@ -156,7 +156,7 @@ const Header = () => {
                   : 'text-slate-300 hover:bg-slate-800'
               }`}
             >
-              Offers
+              Ofertas
             </Link>
             
             {/* Mobile Search */}
@@ -166,7 +166,7 @@ const Header = () => {
               </div>
               <input 
                 className="block w-full rounded-lg border-none bg-slate-800 py-2 pl-10 pr-3 text-sm text-white placeholder-slate-400 focus:ring-1 focus:ring-green-400" 
-                placeholder="Search perfume..." 
+                placeholder="Buscar perfume..." 
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}

@@ -1,7 +1,6 @@
 // src/pages/WomenCatalogPage.jsx
 import { useState } from 'react';
 import Header from '../components/layout/Header';
-import FloatingWhatsApp from '../components/layout/FloatingWhatsApp';
 import Icon from '../components/ui/Icon';
 import { womenProducts, womenBrands, womenScentFamilies } from '../data/womenProducts';
 import { useCart } from '../context/CartContext';
@@ -171,7 +170,7 @@ const WomenCatalogPage = () => {
         </p>
       </main>
 
-      <FloatingWhatsApp />
+      {/* FloatingWhatsApp removed */}
     </div>
   );
 };
