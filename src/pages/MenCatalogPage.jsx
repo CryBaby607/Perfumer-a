@@ -7,7 +7,6 @@ import Pagination from '../components/catalog/Pagination';
 import FloatingWhatsApp from '../components/layout/FloatingWhatsApp';
 import Icon from '../components/ui/Icon';
 import { menProducts, brands, scentFamilies } from '../data/menProducts';
-import { useCart } from '../context/CartContext';
 
 const MenCatalogPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,7 +16,7 @@ const MenCatalogPage = () => {
     priceRange: { min: 50, max: 500 }
   });
   const [sortBy, setSortBy] = useState('featured');
-  const { addToCart } = useCart();
+  const [quoteCount, setQuoteCount] = useState(2);
 
   // Filtrar productos
   const filteredProducts = menProducts.filter(product => {
@@ -59,9 +58,8 @@ const MenCatalogPage = () => {
   };
 
   const handleAddToQuote = (product) => {
-    addToCart(product);
-    // Opcional: mostrar notificación
-    alert(`${product.name} added to cart!`);
+    setQuoteCount(prev => prev + 1);
+    alert(`${product.name} added to quote!`);
   };
 
   const handleWhatsApp = (product) => {
