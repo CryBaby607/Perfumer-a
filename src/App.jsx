@@ -6,6 +6,7 @@ import MenCatalogPage from './pages/MenCatalogPage';
 import WomenCatalogPage from './pages/WomenCatalogPage';
 import OffersPage from './pages/OffersPage';
 import CartPage from './pages/CartPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/women" element={<WomenCatalogPage />} />
           <Route path="/offers" element={<OffersPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/product/:gender/:id" element={<ProductDetailPage />} />
         </Routes>
       </CartProvider>
     </BrowserRouter>

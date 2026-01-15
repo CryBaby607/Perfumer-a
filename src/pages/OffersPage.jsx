@@ -1,5 +1,6 @@
 // src/pages/OffersPage.jsx
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Icon from '../components/ui/Icon';
 import { offersProducts } from '../data/offersProducts';
@@ -21,6 +22,15 @@ const OffersPage = () => {
   const handleAddToQuote = (product) => {
     addToCart(product);
     alert(`${product.name} added to cart!`);
+  };
+
+  // Determinar género del producto (necesario para la URL)
+  const getProductGender = (product) => {
+    // Asumimos que si el producto tiene género definido, lo usamos
+    // Si no, determinamos por la categoría
+    return product.gender === 'Masculino' || product.category === 'Woody' || product.category === 'Fresh' 
+      ? 'men' 
+      : 'women';
   };
 
   return (
@@ -76,22 +86,26 @@ const OffersPage = () => {
                 -{product.discount}%
               </div>
 
-              {/* Image */}
-              <div className="relative w-full aspect-[4/5] bg-slate-900 rounded-lg overflow-hidden">
+              {/* Image - Clickeable */}
+              <Link to={`/product/${getProductGender(product)}/${product.id}`} className="relative w-full aspect-[4/5] bg-slate-900 rounded-lg overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url(${product.image})` }}
                 />
-              </div>
+              </Link>
 
               {/* Info */}
               <div className="flex flex-col gap-1">
                 <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">
                   {product.brand}
                 </p>
-                <h3 className="text-white text-lg font-bold leading-tight">
-                  {product.name}
-                </h3>
+                
+                {/* Name - Clickeable */}
+                <Link to={`/product/${getProductGender(product)}/${product.id}`}>
+                  <h3 className="text-white text-lg font-bold leading-tight hover:text-green-400 transition-colors">
+                    {product.name}
+                  </h3>
+                </Link>
                 
                 {/* Price */}
                 <div className="flex items-center gap-3 mt-2">

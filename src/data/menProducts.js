@@ -10,7 +10,21 @@ export const menProducts = [
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9v9Dl6LXz46kDHBqW7Z6oxWt-NoUeMK1w0dPHYr10WmQdeMCwKM2n_uhMzpaU7Lo1YNw5nUmtUIW-y0jzZ4kgTAvsqkGFp9DpBk155_K2L2ukW_uGijBj_O0sHf48iPN1PyzOFGkVLbg2GIkt2z5Jz_ocDtyvND2C5MSDfdMKUn57tZkY_DLfU1h9GMsNvWwid_ZBpTSoDwRwSkjzuUc0RHkcZFffOdexsHoZqyNhITv7Fxc9lsWD3D8anW8ha3wVDCEPxkkq-o4",
     badge: "Best Seller",
     category: "Woody",
-    inStock: true
+    inStock: true,
+    description: "Una fragancia oriental amaderada intensa y cautivadora. Oud Wood Intense captura la esencia del exclusivo oud con un toque ahumado y especiado.",
+    longDescription: "Oud Wood Intense de Tom Ford es una interpretación más intensa y cautivadora del icónico Oud Wood. Esta fragancia combina las notas más raras y preciosas del oud con acordes ahumados y especiados para crear una experiencia olfativa verdaderamente única y memorable.",
+    notes: {
+      top: ["Cardamomo", "Pimienta Rosa", "Angélica"],
+      heart: ["Oud", "Sándalo", "Vetiver"],
+      base: ["Ámbar", "Tonka", "Incienso"]
+    },
+    volume: "100ml",
+    concentration: "Eau de Parfum",
+    longevity: "8-10 horas",
+    sillage: "Fuerte",
+    occasion: "Noche, Ocasiones Especiales",
+    season: "Otoño, Invierno",
+    gender: "Masculino"
   },
   {
     id: 2,
@@ -22,7 +36,21 @@ export const menProducts = [
     badge: "15% Off",
     badgeColor: "red",
     category: "Fresh",
-    inStock: true
+    inStock: true,
+    description: "La concentración más intensa de Sauvage. Una fragancia poderosa y magnética con especias vibrantes.",
+    longDescription: "Sauvage Elixir es la versión más concentrada y poderosa de la línea Sauvage de Dior. Con especias cálidas y maderas nobles, esta fragancia ofrece una experiencia olfativa excepcional y duradera.",
+    notes: {
+      top: ["Canela", "Nuez Moscada", "Cardamomo"],
+      heart: ["Lavanda", "Regaliz"],
+      base: ["Sándalo", "Pachulí", "Haba Tonka"]
+    },
+    volume: "100ml",
+    concentration: "Parfum",
+    longevity: "10-12 horas",
+    sillage: "Muy Fuerte",
+    occasion: "Día, Noche",
+    season: "Todo el Año",
+    gender: "Masculino"
   },
   {
     id: 3,

@@ -1,5 +1,6 @@
 // src/pages/WomenCatalogPage.jsx
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Icon from '../components/ui/Icon';
 import { womenProducts, womenBrands, womenScentFamilies } from '../data/womenProducts';
@@ -110,8 +111,8 @@ const WomenCatalogPage = () => {
               key={product.id}
               className="group flex flex-col gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl border border-transparent hover:border-pink-400/40 dark:hover:border-pink-400/40 transition-all duration-300 hover:shadow-xl dark:hover:shadow-pink-900/10"
             >
-              {/* Image */}
-              <div className="relative w-full aspect-[4/5] bg-gray-50 dark:bg-slate-900 rounded-xl overflow-hidden">
+              {/* Image - Clickeable */}
+              <Link to={`/product/women/${product.id}`} className="relative w-full aspect-[4/5] bg-gray-50 dark:bg-slate-900 rounded-xl overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url(${product.image})` }}
@@ -130,16 +131,21 @@ const WomenCatalogPage = () => {
                     <Icon name="favorite" className="text-[20px]" />
                   </button>
                 </div>
-              </div>
+              </Link>
 
               {/* Info */}
               <div className="flex flex-col gap-1">
                 <p className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-widest">
                   {product.brand}
                 </p>
-                <h3 className="text-slate-900 dark:text-white text-lg font-bold leading-tight">
-                  {product.name}
-                </h3>
+                
+                {/* Name - Clickeable */}
+                <Link to={`/product/women/${product.id}`}>
+                  <h3 className="text-slate-900 dark:text-white text-lg font-bold leading-tight hover:text-pink-400 transition-colors">
+                    {product.name}
+                  </h3>
+                </Link>
+
                 <div className="flex items-center gap-3 mt-1">
                   <p className="text-slate-900 dark:text-white text-base font-bold">
                     ${product.price.toFixed(2)}
