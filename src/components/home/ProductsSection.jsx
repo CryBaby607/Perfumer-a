@@ -5,8 +5,7 @@ import { products } from '../../data/products';
 
 const ProductsSection = () => {
   const handleAddToCart = (product) => {
-    alert(`Added ${product.name} to cart!`);
-    // Aquí puedes implementar lógica de carrito real
+    alert(`¡${product.name} agregado al carrito!`);
   };
 
   return (
@@ -16,7 +15,7 @@ const ProductsSection = () => {
         <div className="flex justify-between items-end mb-8">
           <div>
             <h2 className="text-blue-500 text-sm font-bold uppercase tracking-widest mb-2">
-              Editor's Pick
+              Selección del Editor
             </h2>
             <h3 className="text-white text-3xl font-bold">
               Fragancias Destacadas
@@ -26,7 +25,7 @@ const ProductsSection = () => {
             className="hidden sm:flex items-center gap-1 text-green-400 hover:text-white transition-colors text-sm font-bold" 
             href="#"
           >
-            View All <Icon name="arrow_forward" className="text-lg" />
+            Ver Todo <Icon name="arrow_forward" className="text-lg" />
           </a>
         </div>
 
